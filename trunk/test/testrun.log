@@ -1,0 +1,235 @@
+Test Run By shiyu on Tue Sep 24 15:47:38 2013
+Native configuration is x86_64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/share/dejagnu/config/unix.exp as generic interface file for target.
+WARNING: Couldn't find tool config file for unix, using default.
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/ArrayNew.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/New.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/SimpleVirtual.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/StaticConstructor.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/StaticDestructor.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/Trivial.cpp
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/CXX/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Coverage/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Coverage/ReadArgs.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Coverage/ReplayOutDir.c
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Coverage/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Dogfood/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Dogfood/ImmutableSet.cpp
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Dogfood/dg.exp completed in 47 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Lexer/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Lexer/Numbers.pc
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Lexer/dg.exp completed in 1 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/Concat64.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/ConstantFolding.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/Exprs.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/MultiByteReads.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/Simplify.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/TypeChecking.pc
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Parser/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Evaluate.pc
+XFAIL: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/Evaluate2.pc
+Failed with exit(1) at line 2
+while running: grep "Query 0:	VALID" Evaluate2.pc.tmp.log
+child process exited abnormally
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/print-smt.pc
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Expr/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Alias.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/AliasFunction.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/AliasFunctionExit.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/AsmAddresses.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/BitcastAlias.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/ByteSwap.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/CallToUndefinedExternal.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/CheckMemoryAccess.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/ConstantStruct.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/CopyOnWrite.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/DanglingConcreteReadExpr.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/DefineFixedObject.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/DoubleFree.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/DumpStatesOnHalt.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Envp.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/ExprLogging.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/ExternalWeakLinkage.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Float.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/FloatingPt.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/FunctionPointer.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/GetElementPtr.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/GetValue.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/InAndOutOfBounds.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/IndirectCallToBuiltin.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/IndirectCallToExternal.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/InsertExtractValue.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/IsSymbolic.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/KleeReportError.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/LargeReturnTypes.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/LongDouble.cpp
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/LongDoubleSupport.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/LowerSwitch.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MakeConcreteSymbolic.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MakeSymbolicName.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MemoryLimit.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MultipleFreeResolution.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MultipleReadResolution.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MultipleReallocResolution.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/MultipleWriteResolution.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/NamedSeedMatching.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/OneFreeError.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/OneOutOfBounds.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Optimize.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Overflow.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/OverflowMul.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/OverlappedError.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/PreferCex.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/RaiseAsm.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Realloc.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/ReplayPath.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Searchers.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/SetForking.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/SolverTimeout.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/Vararg.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/WithLibc.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/WriteCov.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/const_array_opt1.c
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Feature/dg.exp completed in 22 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/dg.exp ...
+XFAIL: /home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c
+Failed with exit(1) at line 1
+while running: /home/shiyu/Documents/Workspace/KLEE/llvm-gcc4.2-2.9-x86_64-linux/bin/llvm-gcc -I/home/shiyu/Documents/Workspace/KLEE/klee/include -emit-llvm -m32 /home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c -emit-llvm -O0 -c -o pcregrep.c.tmp1.bc
+In file included from /usr/include/features.h:389,
+                 from /usr/include/setjmp.h:26,
+                 from /home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c:7:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c: In function ‘main’:
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c:321: warning: return type of ‘main’ is not ‘int’
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c: In function ‘compile_regex’:
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c:7901: warning: incompatible implicit declaration of built-in function ‘memcpy’
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/pcregrep.c:8907: warning: incompatible implicit declaration of built-in function ‘memcpy’
+
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Programs/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/dg.exp ...
+FAIL: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/DirConsistency.c
+Failed with exit(1) at line 2
+while running: klee --run-in=/tmp --search=random-state --libc=uclibc --posix-runtime --exit-on-error DirConsistency.c.tmp.bc --sym-files 1 1 > DirConsistency.c.tmp1.log
+KLEE: NOTE: Using model: /home/shiyu/Documents/Workspace/KLEE/klee/Release+Asserts/lib/libkleeRuntimePOSIX.bca
+KLEE: output directory = "klee-out-0"
+KLEE: WARNING: undefined reference to function: __xstat64
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 63427216)
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: calling external: __xstat64(1, 63339904, 63461232)
+KLEE: WARNING ONCE: calling external: printf(63286928, 2)
+KLEE: ERROR: /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c:735: ASSERTION FAIL: s != (off64_t) -1
+KLEE: NOTE: now ignoring this error at this location
+EXITING ON ERROR:
+Error: ASSERTION FAIL: s != (off64_t) -1
+File: /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c
+Line: 735
+Stack: 
+	#0 00011824 in __fd_getdents (fd=3, dirp=63674736, count=4096) at /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c:735
+	#1 00013622 in getdents (fd=3, dirp=63674736, nbytes=4096) at /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd_32.c:151
+	#2 00002176 in readdir (dir=63450960) at /home/shiyu/Documents/Workspace/KLEE/klee-uclibc-0.02-x64/libc/misc/dirent/readdir.c:33
+	#3 00000313 in __user_main (argc=4, argv=55554176)
+	#4 00001121 in __uClibc_main (main=50158800, argc=4, argv=55554176, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/shiyu/Documents/Workspace/KLEE/klee-uclibc-0.02-x64/libc/misc/internals/__uClibc_main.c:402
+	#5 00009374 in main (=4, =55554176)
+
+
+FAIL: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/DirSeek.c
+Failed with exit(1) at line 2
+while running: klee --run-in=/tmp --libc=uclibc --posix-runtime --exit-on-error DirSeek.c.tmp2.bc --sym-files 2 2
+pos: 280
+KLEE: NOTE: Using model: /home/shiyu/Documents/Workspace/KLEE/klee/Release+Asserts/lib/libkleeRuntimePOSIX.bca
+KLEE: output directory = "klee-out-1"
+KLEE: WARNING: undefined reference to function: __xstat64
+KLEE: WARNING: undefined reference to function: fwrite
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 48919648)
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: calling external: __xstat64(1, 48837552, 48954064)
+KLEE: WARNING ONCE: calling external: printf(48794800, 280)
+KLEE: ERROR: /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c:735: ASSERTION FAIL: s != (off64_t) -1
+KLEE: NOTE: now ignoring this error at this location
+EXITING ON ERROR:
+Error: ASSERTION FAIL: s != (off64_t) -1
+File: /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c
+Line: 735
+Stack: 
+	#0 00006796 in __fd_getdents (fd=3, dirp=49172960, count=4096) at /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd.c:735
+	#1 00008596 in getdents (fd=3, dirp=49172960, nbytes=4096) at /home/shiyu/Documents/Workspace/KLEE/klee/runtime/POSIX/fd_32.c:151
+	#2 00001820 in readdir (dir=49031216) at /home/shiyu/Documents/Workspace/KLEE/klee-uclibc-0.02-x64/libc/misc/dirent/readdir.c:33
+	#3 00000287 in __user_main (argc=4, argv=45677728)
+	#4 00001158 in __uClibc_main (main=40813808, argc=4, argv=45677728, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/shiyu/Documents/Workspace/KLEE/klee-uclibc-0.02-x64/libc/misc/internals/__uClibc_main.c:402
+	#5 00004342 in main (=4, =45677728)
+
+
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/FDNumbers.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/FD_Fail.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/FD_Fail2.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Fcntl.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/FilePerm.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/FreeArgv.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Getenv.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Ioctl.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Isatty.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/PrgName.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Read1.c
+XFAIL: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c
+Failed with exit(1) at line 1
+while running: /home/shiyu/Documents/Workspace/KLEE/llvm-gcc4.2-2.9-x86_64-linux/bin/llvm-gcc -I/home/shiyu/Documents/Workspace/KLEE/klee/include -emit-llvm /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c -emit-llvm -O0 -c -o SELinux.c.tmp1.bc
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:6:29: error: selinux/selinux.h: No such file or directory
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c: In function ‘main’:
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:12: error: ‘security_context_t’ undeclared (first use in this function)
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:12: error: (Each undeclared identifier is reported only once
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:12: error: for each function it appears in.)
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:12: error: expected ‘;’ before ‘con’
+/home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SELinux.c:23: error: ‘con’ undeclared (first use in this function)
+
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/SeedAndFail.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Stdin.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Write1.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/Write2.c
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/POSIX/dg.exp completed in 28 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/Uclibc/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/Uclibc/2007-10-08-optimization-calls-wrong-libc-functions.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/Uclibc/2008-03-04-libc-atexit-uses-dso-handle.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/Uclibc/Environ.c
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Runtime/Uclibc/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/Solver/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Solver/FastCexSolver.pc
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/Solver/LargeIntegers.pc
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/Solver/dg.exp completed in 0 seconds
+Running /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/dg.exp ...
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-07-25-invalid-stp-array-binding-to-objectstate.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-07-30-unflushed-byte.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-01-bool-zext-in-call.ll
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-01-cache-unclear-on-overwrite-flushed.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-06-64bit-shift.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-06-access-after-free.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-08-free-zero.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-16-invalid-constant-value.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-08-16-valid-write-to-freed-object.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-10-11-free-of-alloca.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-10-11-illegal-access-after-free-and-branch.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2007-10-12-failed-make-symbolic-after-copy.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2008-03-04-free-of-global.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2008-03-11-free-of-malloc-zero.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2008-04-10-bad-alloca-free.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2008-05-23-gep-with-global-const.c
+PASS: /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/2012-05-13-asm-causes-aborts.c
+testcase /home/shiyu/Documents/Workspace/KLEE/klee/test/regression/dg.exp completed in 1 seconds
+
+		===  Summary ===
+
+# of expected passes		112
+# of unexpected failures	2
+# of expected failures		3
+runtest completed at Tue Sep 24 15:49:17 2013
